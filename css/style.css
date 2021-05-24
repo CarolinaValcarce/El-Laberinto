@@ -1,0 +1,38 @@
+*{
+	margin:0px;
+	padding:0px;
+
+}
+#vertical{
+	display: none;
+}
+#container{
+	position:relative;
+	height:500px;
+	width: 1000px;
+	margin: 2vh auto;	
+}
+#canvas{
+	background:url("../img/grid.jpg");
+}
+#time{
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	font-family: Verdana;
+}
+@media all and (orientation: portrait){
+	#container {
+		display: none;
+	}
+	#vertical{
+		background:url("../img/vertical.jpg");
+		display:block;
+		position:fixed;
+		width:100%;
+		height:100%;
+		background-size: cover;
+		background-position: center;
+
+	}
+}
